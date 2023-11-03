@@ -20,7 +20,7 @@ public class JobTest {
     }
     @Test
     public void testJobConstructorSetsAllFields(){
-        Job test_job1 = new Job ("Super Silly Computer Salesman",new Employer("AFRC Federal"),new Location("New Jersey"),new PositionType("Super Sales"),new CoreCompetency("Gall"));
+        Job test_job1 = new Job (("Super Silly Computer Salesman"),new Employer("AFRC Federal"),new Location("New Jersey"),new PositionType("Super Sales"),new CoreCompetency("Gall"));
    assertEquals(test_job1.getName(),"Super Silly Computer Salesman");
    assertEquals(test_job1.getEmployer(),"AFRC Federal");
    assertEquals(test_job1.getLocation(), "New Jersey");
