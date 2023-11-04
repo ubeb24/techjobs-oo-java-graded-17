@@ -22,10 +22,10 @@ public class JobTest {
     public void testJobConstructorSetsAllFields(){
         Job test_job1 = new Job (("Super Silly Computer Salesman"),new Employer("AFRC Federal"),new Location("New Jersey"),new PositionType("Super Sales"),new CoreCompetency("Gall"));
    assertEquals(test_job1.getName(),"Super Silly Computer Salesman");
-   assertEquals(test_job1.getEmployer(),"AFRC Federal");
-   assertEquals(test_job1.getLocation(), "New Jersey");
-   assertEquals(test_job1.getPositionType(), "Super Sales");
-   assertEquals(test_job1.getCoreCompetency(), "Gall");
+   assertEquals(test_job1.getEmployer().getValue(),"AFRC Federal");
+   assertEquals(test_job1.getLocation().getValue(), "New Jersey");
+   assertEquals(test_job1.getPositionType().getValue(), "Super Sales");
+   assertEquals(test_job1.getCoreCompetency().getValue(), "Gall");
     }
     @Test
     public void testJobsForEquality() {
